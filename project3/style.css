@@ -1,0 +1,209 @@
+:root {
+    /*  ==================
+      COLOR PALETTE
+      ==================*/
+
+    --color-red: #c61a3a;
+    --color-green: #71f79f;
+    --color-offblack: #1e2019;
+    --color-grey: #d1d5de;
+    --color-offwhite: #fafafa;
+    --color-blue: #163346;
+    /* Reminder that you can name your variables anything you want, they just have to start with two dashes (--) */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
+}
+
+​ .button-reset[disabled] {
+    cursor: default;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+label {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 3px solid var(--color-offwhite);
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
+    color: aqua;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    background-color: aqua;
+
+}
+
+input[type="text"]:required:valid,
+input[type="email"]:required:valid,
+input[type="number"]:required:valid {
+    background-color: greenyellow;
+
+}
+
+input[type="text"]:not(:placeholder-shown):invalid,
+input[type="email"]:not(:placeholder-shown):invalid,
+input[type="number"]:invalid {
+    background-color: var(--color-offwhite);
+
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+}
+
+body {
+    color: var(--color-offwhite);
+    /*margin-left: 100px;*/
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+}
+
+h1 {
+    font-size: 20px;
+    color: var(--color-blue);
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--color-offwhite);
+}
+
+
+
+header {
+    color: var(--color-offblack);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header {
+    background-color: green;
+
+}
+
+.selector {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.names {
+    align-self: auto;
+
+
+}
+
+form {
+    padding-left: 15px;
+    margin: 0;
+    background: var(--color-offblack);
+    border-width: 20px;
+    border-color: var(--color-blue);
+    border-style: solid;
+}
+
+div::before {
+
+    background: var(--color-grey);
+    height: 50px;
+
+}
+
+
+
+.strength,
+.speed,
+.intelligence {
+    height: 101px;
+    width: 100px;
+    display: inline-block;
+}
+
+.abilities {
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.button-reset {
+    background-color: var(--color-green);
+    color: var(--color-blue);
+    position: relative;
+    left: 35%;
+
+}
+
+
+Collapse
