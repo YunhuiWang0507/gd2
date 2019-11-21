@@ -38,6 +38,10 @@ fieldset {
     padding: 0;
 }
 
+label {
+    display: block;
+}
+
 input,
 select,
 textarea {
@@ -109,14 +113,16 @@ input[type="number"]:invalid {
 }
 
 body {
-    width: 60%;
-    padding-left: 40%;
-    text-align: left;
     color: var(--color-offwhite);
     /*margin-left: 100px;*/
-    position: absolute;
     font-family: 'Teko', sans-serif;
     font-size: 20px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
 }
 
 h1 {
@@ -158,7 +164,7 @@ header {
 
 }
 
-div {
+form {
     padding-left: 15px;
     margin: 0;
     background: var(--color-offblack);
@@ -176,11 +182,19 @@ div::before {
 
 
 
-svg {
-    position: relative;
-    left: 35%;
+.strength,
+.speed,
+.intelligence {
     height: 101px;
     width: 100px;
+    display: inline-block;
+}
+
+.abilities {
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
 }
 
 .button-reset {
